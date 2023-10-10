@@ -40,13 +40,8 @@ dat%>%
   ggplot()+geom_boxplot(aes(x=activity,y=degC))+facet_grid(.~who) 
 ```
 
-<<<<<<< HEAD
 Our data did not show a significant correlation between activity and a higher body temperature. In the case of Alexandra, the median of the couch temperature readings were higher than that of the active temperature (~0.3 degrees C difference). It was the opposite in the Michael's data, as the median active temperature was ~0.25 degrees C higher than the inactive temperature median. 
 (t test or anovag group factor temp explaines by activity + who)
-=======
-Our data did not show a significant correlation between activity and a higher body temperature. In the case of Alexandra, the mean of the couch temperature readings were higher than that of the active temperature (~0.3 degrees C difference). It was the opposite in the Michael's data, as the mean active temperature was ~0.25 degrees C higher than the inactive temperature mean. 
-
->>>>>>> 793275d470db07a6696c32bd7b1b45c8c09bac47
 ## Discussion
 
 
