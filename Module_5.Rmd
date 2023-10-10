@@ -9,41 +9,45 @@ bibliogrophy:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-##Introduction
+## Introduction
+In this study, 
+
+## Methods
 
 
-##Methods
-
-
-##Results
+## Results
 
 
 ```{r metadata, echo=FALSE, message=FALSE}
 library(tidyverse)
-dat.f <- list.files(pattern = "couch|active.csv") #find the files
+dat.f <- list.files(pattern = "couch|active.csv") 
 
-dat.l <- list() #make an empty list
+dat.l <- list() 
 
 for(i in dat.f){
-  met.dat<- unlist(strsplit(i,"Metadata")) #split of the filename string
-  who <- met.data[1] #store the first element
-  activity <- gsub(".csv","",met.dat[2]) #store second element, dropping CSV with gsub()
-  dat.l[[i]]<- read_csv(i)%>%
-    mutate(who=who,activity=activity) #read, then store data with additional columns of metada in list as position unique to i
+  met.dat <- unlist(strsplit(i,"_")) 
+  who <- met.dat[1] 
+  activity <- gsub(".csv","",met.dat[2]) 
+  dat.l[[i]]<- read_csv(i) %>%
+    mutate(who=who,activity=activity)
   
 }
-dat <- do.call(rbind,dat.l) #combine the list into table
+
+dat <- do.call(rbind,dat.l) 
+
 
 dat%>%
-  ggplot()+geom_boxplot(aes(x=activity,y=degC))+facet_grid(.~who) #plot to see what we get
+  ggplot()+geom_boxplot(aes(x=activity,y=degC))+facet_grid(.~who) 
 ```
 
-##Discussion
+Our data did not show a significant correlation between activity and a higher body temperature. In the case of Alexandra, the mean of the couch temperature readings were higher than that of the active temperature (~0.3 degrees C difference). It was the opposite in the Michael's data, as the mean active temperature was ~0.25 degrees C higher than the inactive temperature mean. 
+
+## Discussion
 
 
-##Author Contributions
+## Author Contributions
 
 
-##References
+## References
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
