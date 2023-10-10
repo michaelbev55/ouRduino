@@ -10,7 +10,7 @@ bibliography: Mod_5.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Introduction
-In this study, students measured their body temperatures at two different states: active and rest. The goal of this study is to find if body temperature varies in human subjects according to activity level. A previous study 
+In this study, students measured their body temperatures at two different states: active and rest. The goal of this study is to find if body temperature varies in human subjects according to activity level. A previous study it was found that "during strenuous exercise the body's heat production may exceed 1000 W. Some of the heat produced is stored, raising body core temperature by a few degrees. Rises in body temperature are sensed by central and skin thermoreceptors" [@gleeson1998]. 
 
 
 ## Results
