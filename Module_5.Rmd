@@ -48,7 +48,7 @@ Our data did not show a significant correlation between activity and a higher bo
 ## Author Contributions
 Michael Bevilacqua: put together the arduino unit and the temperature probe, wrote the sketch for the probe, and wrote the code and the narrative of our findings in the results section. 
 
-Alexandra Hoogendijk: wrote the introduction and discussion and found the studies that are cited. 
+Alexandra Hoogendijk: wrote the introduction and discussion,  found the studies that are cited and created the bibliography. 
 
 ## References
 
