@@ -10,7 +10,7 @@ bibliography: Mod_5.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Introduction
-In this study, 
+In this study, students measured their body temperatures at two different states: active and rest. The goal of this study is to find if body temperature varies in human subjects according to activity level. A previous study 
 
 
 ## Results
