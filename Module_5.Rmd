@@ -3,7 +3,7 @@ title: "Module 5 Report"
 author: "ouRduino"
 date: "2023-10-10"
 output: html_document
-bibliography: Mod_5.bib
+bibliography: Mod_5.bib.R
 ---
 
 ```{r setup, include=FALSE}
