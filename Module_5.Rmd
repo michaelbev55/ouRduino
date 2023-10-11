@@ -3,7 +3,7 @@ title: "Module 5 Report"
 author: "ouRduino"
 date: "2023-10-10"
 output: html_document
-bibliography: Mod_5.bib.R
+bibliography: mod5.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -37,6 +37,8 @@ dat <- do.call(rbind,dat.l)
 dat%>%
   ggplot()+geom_boxplot(aes(x=activity,y=degC))+facet_grid(.~who) 
 
+```
+```{r t.test, message=FALSE, include=FALSE}
 t.test(dat$degC~dat$activity)
 ```
 
@@ -52,5 +54,6 @@ Michael Bevilacqua: put together the arduino unit and the temperature probe, wro
 Alexandra Hoogendijk: wrote the introduction and discussion,  found the studies that are cited and created the bibliography. 
 
 ## References
+
 
 
