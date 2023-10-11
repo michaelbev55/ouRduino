@@ -10,7 +10,7 @@ bibliography: mod5.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Introduction
-In this study, students measured their body temperatures at two different states: active and rest. The goal of this study is to find if body temperature varies in human subjects according to activity level. A previous study it was found that "during strenuous exercise the body's heat production may exceed 1000 W. Some of the heat produced is stored, raising body core temperature by a few degrees. Rises in body temperature are sensed by central and skin thermoreceptors" [@gleeson1998]. 
+In this study, students measured their body temperatures at two different states: active and rest. The goal of this study is to find if body temperature varies in human subjects according to activity level. A previous study found that "during strenuous exercise the body's heat production may exceed 1000 W. Some of the heat produced is stored, raising body core temperature by a few degrees. Rises in body temperature are sensed by central and skin thermoreceptors" [@gleeson1998]. This theory will be tested using two test subjects, analyzing the results of both resting body temperature, and body temperature after activity. 
 
 
 ## Results
@@ -42,16 +42,17 @@ dat%>%
 t.test(dat$degC~dat$activity)
 ```
 
-Our data did not show a significant correlation between activity and a higher body temperature. In the case of Alexandra, the median of the couch temperature readings were higher than that of the active temperature (~0.3 degrees C difference). It was the opposite in the Michael's data, as the median active temperature was ~0.25 degrees C higher than the inactive temperature median. A t-test was conducted, and resulted in a p-value of 0.81, meaning that there was no effect from activity on body temperature observed. 
+Our data did not show a significant correlation between activity and a higher body temperature. In the case of Alexandra, the median of the couch temperature readings were higher than that of the active temperature (~0.3 degrees C difference). It was the opposite in the Michael's data, as the median active temperature was ~0.25 degrees C higher than the inactive temperature median. A t-test was conducted, and resulted in a p-value of 0.81, meaning that there was no significant effect from activity on body temperature observed. 
 
 ## Discussion
 
-In another study considering effects of activity on body temperature, it was found that exercise increases body temperature. The study also says that "at the initiation of exercise, the metabolic rate increases immediately; however, the thermoregulatory effector responses for heat dissipation respond more slowly" [@michael1993]. The five minutes of jumping jacks may not have been enough time to initiate the thermoregulatory responses to increase body temperature as seen in the results section above. 
+In another study considering effects of activity on body temperature, it was found that exercise increases body temperature. The study also says that "at the initiation of exercise, the metabolic rate increases immediately; however, the thermoregulatory effector responses for heat dissipation respond more slowly" [@michael1993]. The five minutes of jumping jacks may not have been enough time to initiate the thermoregulatory responses to increase body temperature as seen in the results section above. Also, there might have been human error in the temperature probe, as it cooled to near room temperature (~22 degrees C) between trials.
 
 ## Author Contributions
-Michael Bevilacqua: put together the arduino unit and the temperature probe, wrote the sketch for the probe, and wrote the code and the narrative of our findings in the results section. 
+Michael Bevilacqua: put together the arduino unit and the temperature probe, wrote the sketch for the probe, and wrote the code and the narrative of our findings in the results section. (edited all written sections)
 
-Alexandra Hoogendijk: wrote the introduction and discussion,  found the studies that are cited and created the bibliography. 
+Alexandra Hoogendijk: wrote the introduction and discussion,  found the studies that are cited and created the bibliography. (edited all written sections)
+
 
 ## References
 
