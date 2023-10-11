@@ -14,7 +14,7 @@ In this study, students measured their body temperatures at two different states
 
 ## Methods
 A DS18B20 precision linear digital temperature sensor was used with an Aduino Uno, that required ArduinoIDE software. The probe was used to measure the axillary temperature of two test subjects for 100 seconds at a resting state, and after five minutes of jumping jacks for both members. The data was collected into four csv files that were labeled appropriately then combined into a table. The temperatures were plotted, including standard deviations, allowing for comparison with the mean temperatures. 
-
+ 
 ## Results
 
 
