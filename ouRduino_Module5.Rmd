@@ -1,0 +1,59 @@
+---
+title: "Module 5 Report"
+author: "ouRduino"
+date: "2023-10-10"
+output: html_document
+bibliography: mod5.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Introduction
+In this study, students measured their body temperatures at two different states: active and rest. The goal of this study is to find if body temperature varies in human subjects according to activity level. A previous study it was found that "during strenuous exercise the body's heat production may exceed 1000 W. Some of the heat produced is stored, raising body core temperature by a few degrees. Rises in body temperature are sensed by central and skin thermoreceptors" [@gleeson1998]. 
+
+
+## Results
+
+
+```{r metadata, echo=FALSE, message=FALSE}
+library(tidyverse)
+dat.f <- list.files(pattern = "couch|active.csv") 
+
+dat.l <- list() 
+
+for(i in dat.f){
+  met.dat <- unlist(strsplit(i,"_")) 
+  who <- met.dat[1] 
+  activity <- gsub(".csv","",met.dat[2]) 
+  dat.l[[i]]<- read_csv(i) %>%
+    mutate(who=who,activity=activity)
+  
+}
+
+dat <- do.call(rbind,dat.l) 
+
+
+dat%>%
+  ggplot()+geom_boxplot(aes(x=activity,y=degC))+facet_grid(.~who) 
+
+```
+```{r t.test, message=FALSE, include=FALSE}
+t.test(dat$degC~dat$activity)
+```
+
+Our data did not show a significant correlation between activity and a higher body temperature. In the case of Alexandra, the median of the couch temperature readings were higher than that of the active temperature (~0.3 degrees C difference). It was the opposite in the Michael's data, as the median active temperature was ~0.25 degrees C higher than the inactive temperature median. A t-test was conducted, and resulted in a p-value of 0.81, meaning that there was no effect from activity on body temperature observed. 
+
+## Discussion
+
+In another study considering effects of activity on body temperature, it was found that exercise increases body temperature. The study also saya that "at the initiation of exercise, the metabolic rate increases immediately; however, the thermoregulatory effector responses for heat dissipation respond more slowly" [@michael1993]. The five minutes of jumping jacks may not have been enough time to initiate the thermoregulatory responses to increase body temperature as seen in the results of this module 5 project. 
+
+## Author Contributions
+Michael Bevilacqua: put together the arduino unit and the temperature probe, wrote the sketch for the probe, and wrote the code and the narrative of our findings in the results section. 
+
+Alexandra Hoogendijk: wrote the introduction and discussion,  found the studies that are cited and created the bibliography. 
+
+## References
+
+
+
