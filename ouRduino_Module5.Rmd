@@ -50,9 +50,9 @@ Our data did not show a significant correlation between activity and a higher bo
 In another study considering effects of activity on body temperature, it was found that exercise increases body temperature. The study also says that "at the initiation of exercise, the metabolic rate increases immediately; however, the thermoregulatory effector responses for heat dissipation respond more slowly" [@michael1993]. The five minutes of jumping jacks may not have been enough time to initiate the thermoregulatory responses to increase body temperature as seen in the results section above. Also, there might have been human error in the temperature probe, as it cooled to near room temperature (~22 degrees C) between trials.
 
 ## Author Contributions
-Michael Bevilacqua: put together the arduino unit and the temperature probe, wrote the sketch for the probe, and wrote the code and the narrative of our findings in the results section. (edited all written sections)
+Michael Bevilacqua: put together the arduino unit and the temperature probe, wrote the sketch for the probe, and wrote the code and the narrative of our findings in the results section. Wrote half of the methods section.(edited all written sections)
 
-Alexandra Hoogendijk: wrote the introduction and discussion,  found the studies that are cited and created the bibliography. (edited all written sections)
+Alexandra Hoogendijk: wrote the introduction and discussion,  found the studies that are cited and created the bibliography. Wrote half of the methods section. (edited all written sections)
 
 ## References
 
